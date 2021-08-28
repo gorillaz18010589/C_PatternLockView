@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.pallob.lib.PatternLockView
+        android:id="@+id/pattern_lock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lineColor="@color/black"
+        app:normalColor="#ff00ff"
+        app:highlightedColor="@color/black"
+        app:lockSize="3"
+        app:lineWidth="5dp"
+        android:visibility="gone"
+        />
+
+    <com.dyaco.c_patternlockview.PatternLockView
+        android:id="@+id/lock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textSize="14sp"
+        app:tips="绘制解锁图案"
+        app:radius="18dp"
+        app:strokeWidth="2dp"
+        app:textColor="@color/lock_view_default_color"
+        app:selectedColor="#99FF33"
+        app:lineColor="#990000"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
